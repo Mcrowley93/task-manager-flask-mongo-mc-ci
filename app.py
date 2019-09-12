@@ -97,4 +97,4 @@ def add_category():
 
 app.run(host=os.environ.get('IP', '127.0.0.1'),
         port=int(os.environ.get('PORT', '8080')),
-        debug=True)
+        debug=False)
