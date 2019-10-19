@@ -95,6 +95,6 @@ def add_category():
     return render_template('addcategory.html')
 
 
-app.run(host=os.environ.get('IP', '127.0.0.1'),
-        port=int(os.environ.get('PORT', '8080')),
+app.run(host=os.environ.get('IP'),
+        port=os.environ.get('PORT'),
         debug=False)
